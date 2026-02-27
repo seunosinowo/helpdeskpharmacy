@@ -1,5 +1,0 @@
-1:"$Sreact.fragment"
-2:I[97367,["/_next/static/chunks/fef4beee31696fe3.js","/_next/static/chunks/edc1b53d86c6660b.js","/_next/static/chunks/4b3e3273e605134b.js","/_next/static/chunks/4536a2a6585d5647.js","/_next/static/chunks/694836347d1e5ef3.js"],"ViewportBoundary"]
-3:I[97367,["/_next/static/chunks/fef4beee31696fe3.js","/_next/static/chunks/edc1b53d86c6660b.js","/_next/static/chunks/4b3e3273e605134b.js","/_next/static/chunks/4536a2a6585d5647.js","/_next/static/chunks/694836347d1e5ef3.js"],"MetadataBoundary"]
-4:"$Sreact.suspense"
-0:{"buildId":"vPYTQt5edLlKKFQSAikpT","rsc":["$","$1","h",{"children":[["$","meta",null,{"name":"robots","content":"noindex"}],["$","$L2",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$L3",null,{"children":["$","$4",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Helpdesk Pharmacy"}],["$","meta","1",{"name":"description","content":"Your trusted pharmacy partner"}]]}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"loading":null,"isPartial":false}
