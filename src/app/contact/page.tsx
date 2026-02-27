@@ -5,7 +5,7 @@ import ContactForm from "@/components/ContactForm";
 import { ClientMotionDiv } from "@/components/ClientMotionDiv";
 import { Phone as PhoneIcon } from "lucide-react";
 
-const heroContact = "/hero-contact.jpg";
+const heroContact = "/pic7.webp";
 
 const contactInfo = [
   { icon: MapPin, label: "Address", value: "8, Dr Chimezie street, Chevy view estate, Chevron Drive Off Lekki" },

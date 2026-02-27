@@ -3,6 +3,7 @@
   "/_not-found/page": "/_not-found",
   "/about/page": "/about",
   "/contact/page": "/contact",
+  "/doctor/page": "/doctor",
   "/page": "/",
   "/services/page": "/services"
 }

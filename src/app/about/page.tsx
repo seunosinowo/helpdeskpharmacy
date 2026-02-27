@@ -5,8 +5,8 @@ import AnimatedCounter from "@/components/AnimatedCounter";
 import { Shield, Users, Award, Lightbulb, Handshake, Heart, Star, Target, Eye } from "lucide-react";
 import { ClientMotionDiv } from "@/components/ClientMotionDiv";
 
-const heroAbout = "/hero-about.jpg";
-const aboutTeam = "/about-team.jpg";
+const heroAbout = "/pic9.webp";
+const aboutTeam = "/pic8.webp";
 
 const values = [
   { icon: Shield, title: "Integrity", description: "We uphold the highest standards of honesty and ethics in all our actions." },

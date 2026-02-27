@@ -51,6 +51,12 @@ const Navbar = () => {
               )}
             </Link>
           ))}
+          <Link
+            href="/doctor"
+            className="px-5 py-2.5 rounded-full gradient-bg text-primary-foreground text-sm font-medium hover:opacity-90 transition-opacity"
+          >
+            Speak to our Doctor
+          </Link>
         </nav>
 
         {/* Mobile Toggle */}
@@ -86,6 +92,13 @@ const Navbar = () => {
                   {item.label}
                 </Link>
               ))}
+              <Link
+                href="/doctor"
+                onClick={() => setMobileOpen(false)}
+                className="mt-2 px-5 py-3 text-center rounded-xl gradient-bg text-primary-foreground text-sm font-semibold hover:opacity-90 transition-opacity"
+              >
+                Speak to our Doctor
+              </Link>
             </div>
           </motion.nav>
         )}

@@ -29,7 +29,7 @@ const PageHero = ({ image, badge, title, subtitle }: PageHeroProps) => {
             priority
           />
         </motion.div>
-        <div className="absolute inset-0 gradient-hero-bg opacity-85" />
+        <div className="absolute inset-0 gradient-hero-bg opacity-60" />
       </div>
       <div className="container relative z-10 mx-auto px-4 md:px-8 py-24 md:py-32 text-center">
         <motion.span

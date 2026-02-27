@@ -8,9 +8,10 @@ import Link from "next/link";
 import { Pill, MessageCircle, Truck, HeartPulse, Headphones, ArrowRight, CheckCircle2, Clock, ShieldCheck } from "lucide-react";
 import Image from "next/image";
 import { ClientMotionDiv } from "@/components/ClientMotionDiv";
+import { HeroCarousel } from "@/components/HeroCarousel";
 
 const heroImage = "/hero-pharmacy.jpg";
-const aboutTeam = "/about-team.jpg";
+const aboutTeam = "/pic8.webp";
 const wellnessProducts = "/wellness-products.jpg";
 
 const services = [
@@ -32,7 +33,7 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="relative min-h-[70vh] flex items-start overflow-hidden">
+      <section className="relative min-h-[50vh] flex items-center overflow-hidden">
         {/* Background Layer */}
         <div className="absolute inset-0 z-0">
           <ClientMotionDiv
@@ -41,13 +42,7 @@ export default function Home() {
             transition={{ duration: 2, ease: "easeOut" }}
             className="w-full h-full"
           >
-            <Image
-              src={heroImage}
-              alt="Pharmaceutical Excellence"
-              fill
-              className="object-cover"
-              priority
-            />
+            <HeroCarousel />
           </ClientMotionDiv>
           {/* Enhanced Gradient Overlays for better readability and aesthetic */}
           <div className="absolute inset-0 bg-gradient-to-r from-white/95 via-white/80 to-transparent z-10 dark:from-primary/95 dark:via-primary/80 dark:to-transparent" />
