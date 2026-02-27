@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, type FormEvent } from "react";
 import { ClientMotionDiv } from "@/components/ClientMotionDiv";
 
 export default function DoctorForm() {
@@ -12,7 +12,7 @@ export default function DoctorForm() {
     details: "" 
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
     // Handle form submission logic here
     console.log("Form submitted:", formData);
@@ -23,7 +23,7 @@ export default function DoctorForm() {
     <form onSubmit={handleSubmit} className="p-8 md:p-10 rounded-2xl bg-card border border-border shadow-card space-y-5">
       <div>
         <h3 className="font-heading font-bold text-xl mb-1">Consultation Request</h3>
-        <p className="text-muted-foreground text-sm">Discuss with us about your form or medical concerns.</p>
+        <p className="text-muted-foreground text-sm">Discuss with us about your medical concerns.</p>
       </div>
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -73,7 +73,7 @@ export default function DoctorForm() {
           <option value="general">General Consultation</option>
           <option value="prescription">Prescription Refill</option>
           <option value="symptoms">Symptom Discussion</option>
-          <option value="form">Form Assistance</option>
+          <option value="form">Documentation Support</option>
         </select>
       </div>
 

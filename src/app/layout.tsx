@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans, Space_Grotesk } from "next/font/google";
+import type { ReactNode } from "react";
 import "./globals.css";
 import { Providers } from "./providers";
 import Navbar from "@/components/Navbar";
@@ -25,7 +26,7 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: ReactNode;
 }>) {
   return (
     <html lang="en" className={`${plusJakartaSans.variable} ${spaceGrotesk.variable}`}>

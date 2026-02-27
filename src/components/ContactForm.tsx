@@ -1,13 +1,13 @@
 "use client";
 
-import { useState } from "react";
+import { useState, type FormEvent } from "react";
 import { motion } from "framer-motion";
 import { ClientMotionDiv } from "@/components/ClientMotionDiv";
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({ name: "", email: "", subject: "", message: "" });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
   };
 

@@ -5,7 +5,7 @@ import DoctorForm from "@/components/DoctorForm";
 import { Stethoscope, FileText, MessageSquare } from "lucide-react";
 import { ClientMotionDiv } from "@/components/ClientMotionDiv";
 
-const heroImage = "/hero-services.jpg";
+const heroImage = "/pic3.webp";
 
 export default function DoctorPage() {
   return (
@@ -26,10 +26,10 @@ export default function DoctorPage() {
                 <div>
                   <span className="text-sm font-semibold text-accent uppercase tracking-wider">Consultation</span>
                   <h2 className="text-3xl md:text-4xl font-heading font-bold mt-2">
-                    Discuss with us about <span className="gradient-text">your form</span>
+                    Discuss with us about <span className="gradient-text">your health</span>
                   </h2>
                   <p className="text-muted-foreground mt-4 leading-relaxed">
-                    Need help understanding your medical forms or prescriptions? Our qualified doctors are here to assist you. 
+                    Do you need help understanding your medical concerns or prescriptions? Our qualified doctors are here to assist you. 
                     Whether it's a general inquiry or a specific medical question, we provide confidential and professional guidance.
                   </p>
                 </div>
@@ -44,7 +44,7 @@ export default function DoctorPage() {
                   },
                   {
                     icon: FileText,
-                    title: "Form Assistance",
+                    title: "Documentation Support",
                     desc: "We help you understand and complete your medical documentation."
                   },
                   {

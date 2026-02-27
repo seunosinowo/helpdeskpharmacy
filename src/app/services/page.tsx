@@ -5,7 +5,7 @@ import Link from "next/link";
 import { Pill, MessageCircle, Truck, HeartPulse, Headphones, ArrowRight } from "lucide-react";
 import { ClientMotionDiv } from "@/components/ClientMotionDiv";
 
-const heroServices = "/hero-services.jpg";
+const heroServices = "/pic3.webp";
 
 const services = [
   { icon: Pill, title: "Quality Medications", description: "We provide a wide range of high-quality prescription and over-the-counter medications to meet your health needs. Our inventory includes both brand-name and generic options to suit every budget." },
