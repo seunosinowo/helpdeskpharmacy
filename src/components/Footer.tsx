@@ -3,10 +3,12 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 
 const logo = "/logo.png";
 
 const Footer = () => {
+  const pathname = usePathname();
   const [year, setYear] = useState<number | null>(null);
 
   useEffect(() => {

@@ -1,0 +1,35 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id       String @id @default(cuid())
+  username String @unique
+  password String // Hashed
+}
+
+model Invoice {
+  id              String   @id @default(cuid())
+  invoiceNumber   String   @unique
+  date            DateTime @default(now())
+  billTo          String
+  address         String
+  items           Json     // Array of items: { description: string, quantity: number, unitPrice: number, amount: number }
+  subtotal        Float
+  tax             Float    @default(0)
+  total           Float
+  amountPaid      Float    @default(0)
+  balanceDue      Float    @default(0)
+  soldBy          String?
+  cashier         String?
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+}
