@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { cors } from "@/lib/cors";
 import { cookies } from "next/headers";
 
 export async function POST(request: Request) {
@@ -9,7 +10,8 @@ export async function POST(request: Request) {
   const adminPassword = process.env.ADMIN_PASSWORD || "admin123";
 
   if (username === adminUsername && password === adminPassword) {
-    const response = NextResponse.json({ success: true });
+    const headers = cors(request);
+    const response = new NextResponse(JSON.stringify({ success: true }), { status: 200, headers });
     (await cookies()).set("admin_session", "true", {
       httpOnly: true,
       secure: process.env.NODE_ENV === "production",
@@ -19,5 +21,6 @@ export async function POST(request: Request) {
     return response;
   }
 
-  return NextResponse.json({ success: false }, { status: 401 });
+  const headers = cors(request);
+  return new NextResponse(JSON.stringify({ success: false }), { status: 401, headers });
 }

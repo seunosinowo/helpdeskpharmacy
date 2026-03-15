@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { cors } from "@/lib/cors";
 import { prisma } from "@/lib/prisma";
 
 export async function POST(request: Request) {
@@ -34,22 +35,26 @@ export async function POST(request: Request) {
       },
     });
 
-    return NextResponse.json(invoice);
+    const headers = cors(request);
+    return new NextResponse(JSON.stringify(invoice), { status: 200, headers });
   } catch (error) {
     console.error("Error creating invoice:", error);
-    return NextResponse.json({ error: "Failed to create invoice" }, { status: 500 });
+    const headers = cors(request);
+    return new NextResponse(JSON.stringify({ error: "Failed to create invoice" }), { status: 500, headers });
   }
 }
 
-export async function GET() {
+export async function GET(request: Request) {
   try {
     const invoices = await prisma.invoice.findMany({
       orderBy: { createdAt: "desc" },
     });
 
-    return NextResponse.json(invoices);
+    const headers = cors(request);
+    return new NextResponse(JSON.stringify(invoices), { status: 200, headers });
   } catch (error) {
     console.error("Error fetching invoices:", error);
-    return NextResponse.json({ error: "Failed to fetch invoices" }, { status: 500 });
+    const headers = cors(request);
+    return new NextResponse(JSON.stringify({ error: "Failed to fetch invoices" }), { status: 500, headers });
   }
 }
