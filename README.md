@@ -1,6 +1,6 @@
 # Helpdesk Pharmacy 🏥
 
-Helpdesk Pharmacy is a modern, responsive, and user-friendly pharmacy website built with **Next.js 14+** and **Tailwind CSS**. It features a professional design with interactive elements, animations, and a focus on customer service and accessibility.
+Helpdesk Pharmacy is a modern, responsive, and user-friendly pharmacy website built with **Next.js 16** and **Tailwind CSS**. It features a professional design with interactive elements, animations, and a focus on customer service and accessibility.
 
 ## ✨ Features
 
